@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>org.example.add-entity</id>
+    <name>Add Entity</name>
+    <vendor email="support@example.com" url="http://www.example.com">Example</vendor>
+
+    <description>A Plugin for adding Spring Data JPA Entities</description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action class="app.action.AddEntityAction" id="app.action.AddEntityAction" text="Add Entity" description="Add entity" icon="AllIcons.Nodes.Class">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
